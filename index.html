@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ietdavv.edu.in</title>
+	<!-- [if lt IE 9]
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <!endif]
+	-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<div class="container">
+<header>
+	<nav>
+    	<ul>
+    		<li><a href="/index.html">Home</a></li>
+    		<li><a href="/courses.html">Courses</a></li>
+    		<li><a href="/about.html">About</a></li>
+    		<li><a href="/contact.html">Contact</a></li>
+    	</ul>
+    </nav>
+	<img src="images/logo.png"/>
+	<h1>Welcome To IET DAVV</h1>
+	<h2>Home</h2>
+</header>
+<section id="main" class="boxed">
+    <p>This is <em>Home</em> page of <strong>IET DAVV</strong></p>
+    <div class="login-form boxed">
+    <form action="/api/login" method="POST" id="loginForm">
+    	<label for="username">Username</label>
+    	<input type="text" name="username" id="username" /><br/>
+    	<label for="password">Password</label>
+    	<input type="password" name="password" id="password" /><br/>
+    	<input type="checkbox" name="remember" id="remember">
+    	<label for="remember">Remember Me</label><br />
+        <div id="errorMsg"></div>
+
+        <br/>
+    	<input type="submit" name="loginbutton" value="Login">
+    	<input type="reset" name="cancelbutton" value="Cancel">
+    </form>
+    <div id="logoutSection">
+    	<p>You are logged in.</p>
+    	<button id="logoutButton">Logout</button>
+    </div>
+    </div>
+    <div id="results" class="boxed">
+      <button id="toggleButton">Hide</button>
+    <div id="resultlist">
+      Here we will display all the courses    	
+    </div>
+</section>
+
+<footer>
+	&copy; <strong>1996 IET DAVV</strong>
+</footer>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
